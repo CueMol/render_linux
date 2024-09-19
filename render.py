@@ -43,7 +43,14 @@ def main():
         rad_mode=args.radiosity_mode,
         nthr=args.nthreads,
     )
-    rend.render_anim(scene, outname, args.start_frame, args.num_frames)
+    # rend.render_simple(scene, outname)
+    # return
+
+    animMgr = scene.getAnimMgr()
+    if animMgr.size > 0:
+        rend.render_anim(scene, outname, args.start_frame, args.num_frames)
+    else:
+        rend.render(scene, outname)
 
 
 if __name__ == "__main__":
