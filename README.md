@@ -28,7 +28,7 @@ bash build_scripts/build_pymod_posix/run.sh /opt
 
 ## povrayを入れる
 上記のDockerfileではpovrayを入れていないので、入れる。
-- buildしたものが、[CueMol/povray_build](https://github.com/CueMol/povray_build/releases/download/v0.0.5/)にあるので、これを使うのが手っ取り早い
+- buildしたものが、[CueMol/povray_build](https://github.com/CueMol/povray_build/releases/tag/v0.0.5)にあるので、これを使うのが手っ取り早い
 - 以下では、/opt/povrayに展開
 - （ともかくもインストールできればこれ以外の方法でもよい）
 
