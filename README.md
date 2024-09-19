@@ -43,3 +43,7 @@ env LD_LIBRARY_PATH=/opt/cuemol2/lib/ python3.12 render.py \
     --nthreads 16 \
     --radiosity_mode=7
 ```
+- outnameを省略すると、infileと同じ場所に、同じbasenameでpngファイルができる。
+- Outdoor HQ相当にする場合は、radiosity_mode=7にする
+- num_frames=-1 (default)では、全部フレームをrenderingする。
+  - 並列でrenderingする場合は、start_frameとnum_framesを適宜ノードごとに割り振るようにして起動すればOK
