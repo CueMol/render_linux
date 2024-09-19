@@ -50,7 +50,7 @@ def main():
     if animMgr.size > 0:
         rend.render_anim(scene, outname, args.start_frame, args.num_frames)
     else:
-        rend.render(scene, outname)
+        rend.render_simple(scene, outname)
 
 
 if __name__ == "__main__":
